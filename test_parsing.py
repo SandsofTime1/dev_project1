@@ -21,7 +21,7 @@ class json_search_test(unittest.TestCase):
         self.assertIsInstance(json_search(key1,data),list)
 
 class yaml_search_test(unittest.TestCase):
-    '''test module to test search function in `recursive_json_search.py`'''
+    '''test module to test search function in `recursive_yaml_search.py`'''
     def test_search_found(self):
         '''key should be found, return list should not be empty'''
         self.assertTrue([]!=yaml_search(key1,data))
@@ -33,7 +33,7 @@ class yaml_search_test(unittest.TestCase):
         self.assertIsInstance(yaml_search(key1,data),list)
 
 class xml_search_test(unittest.TestCase):
-    '''test module to test search function in `recursive_json_search.py`'''
+    '''test module to test search function in `recursive_xml_search.py`'''
     def test_search_found(self):
         '''key should be found, return list should not be empty'''
         self.assertTrue([]!=xml_search(key1,data))
