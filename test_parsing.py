@@ -1,11 +1,10 @@
 import unittest
 
 from recursive_json_search import *
-from test_data_json import *
 from recursive_yaml_search import *
-from test_data_yaml import *
 from recursive_xml_search import *
-from test_data_xml import *
+from test_data import *
+
 
 
 
