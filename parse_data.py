@@ -4,7 +4,7 @@ import re
 import json
 import yaml
 
-xml = ET.parse('myfile.xml')
+xml = ET.parse('data.xml')
 root = xml.getroot()
 
 ns = re.match('{.*}', root.tag).group(0)
@@ -18,7 +18,7 @@ print("The test-option contains: {}".format(testop.text))
 
 
 
-with open('myfile.yaml', 'r') as yaml_file:
+with open('data.yaml', 'r') as yaml_file:
     ouryaml = yaml.safe_load(yaml_file)
 
     print(ouryaml)
@@ -29,7 +29,7 @@ with open('myfile.yaml', 'r') as yaml_file:
 
     yaml_file.close()
 
-with open('myfile.json', 'r') as json_file:
+with open('data.json', 'r') as json_file:
     ourjson = json.load(json_file)
     print(ourjson)
 
