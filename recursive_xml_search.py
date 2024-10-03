@@ -1,3 +1,5 @@
+from test_data import *
+
 def xml_search(key,input_object):
     """
     Search a key from XML object, get nothing back if key is not found
